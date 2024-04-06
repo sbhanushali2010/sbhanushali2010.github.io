@@ -127,6 +127,7 @@ section{
 }
 .home-image{
     position: relative;
+    top: -100px;
 }
 
 .img-box{
@@ -153,7 +154,7 @@ section{
     font-weight: bolder;
     position: relative;
     top: 80px;
-    left: 130px;
+    left: 200px;
 }
 .liquid-shape{
     position: absolute;
