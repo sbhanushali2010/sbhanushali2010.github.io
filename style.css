@@ -198,12 +198,43 @@ section{
     z-index: 1;
 }
 
+/* Optimized Mobile Responsiveness */
+@media (max-width: 768px) {
+    .home-image {
+        max-width: 450px;
+    }
+    .social-icons{
+        margin-left: 45%;
+    }
+}
+
 /* Media queries for responsiveness */
 @media only screen and (max-width: 600px) {
     .home-content {
         grid-template-columns: 1fr;
     }
+    .home {
+        flex-direction: column; 
+    }
+    
+    .btn-box, .info-box {
+        justify-content: center;
+        margin: 1rem auto;
+    }
+
+    .change-text h3 {
+        display: block; /* Gives more room for rotating titles */
+    }
 }
+
+@media (max-width: 480px){
+
+    .home-image {
+    max-width: 350px;
+    }
+}
+
+
 
 .home{
     min-height: 100vh;
@@ -399,11 +430,16 @@ section{
     background: var(--text-color);
 }
 .about-content span{
+<<<<<<< HEAD
+    font-weight: 700;
+    color: var(--secon-bg-color);
+=======
     color: var(--secon-bg-color);
     font-size: .8rem;
     font-weight: 200;
     letter-spacing: 2px;
     text-transform: uppercase;
+>>>>>>> d6d96cd17f3d7e2ac286b55092230fbbe93808e9
 }
 
 .about-content h2{
@@ -425,12 +461,16 @@ section{
     margin-bottom: 1.5rem;
 }
 
+<<<<<<< HEAD
+
+=======
 .highlight2 {
     font-weight: 700 !important; /* Increased thickness */
     text-transform: uppercase; /* Optional: Makes them stand out even more */
     letter-spacing: 1px;
     font-family: "Poppins", sans-serif ;
 }
+>>>>>>> d6d96cd17f3d7e2ac286b55092230fbbe93808e9
 
 .info-about1,
 .info-about2,
@@ -699,7 +739,9 @@ footer a{
     color: var(--secon-bg-color);
 }
 
-
+.projects{
+    background-color: var(--secon-bg-color);
+}
 
 
 
