@@ -81,6 +81,20 @@ function activeMenu(){
 activeMenu();
 window.addEventListener("scroll",activeMenu);
 
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 
 // sticky navbar /////////////////////////////////////////////////
 const header = document.querySelector("header");
